@@ -1,0 +1,73 @@
+// const nome = "João Paulo";
+
+// // console.log("Olá mundo")
+// // console.log(nome)
+// // console.log(nome + " Desenvolvedor")
+
+// let projetosFeitos = 2;
+// projetosFeitos = projetosFeitos + 9;
+
+// // console.log(nome + " possui " + projetosFeitos + " projetos")
+
+// const profissao = "Desenvolvedor de IA";
+// const cidade = "Peabiru";
+// const anoAtual = 2026;
+// const anoNascimento = 2004;
+// const anoDeCurso = 2024
+
+// const idade = anoAtual - anoNascimento
+// const curso = anoAtual- anoDeCurso
+
+// // console.log(nome + " possui " + idade + " de idade, trabalha como " + profissao + " e mora em " + cidade + ".")
+
+// const titulo = `Oi, eu sou ${nome}`
+
+// const bio = `possui ${idade} de idade, ${curso} de curso, trabalha com ${profissao} e mora em ${cidade}. `
+
+// console.log(titulo + bio)
+
+// document.querySelector(".hero h1").textContent = nome
+// document.querySelector(".hero h2").textContent = `${profissao} - ${cidade}`
+
+// const birthday = new Date("July, 28 2004");
+
+// document.querySelector(".hero p").textContent = `${bio} - data de aniversario ${birthday.getDate()}/${birthday.getMonth() + 1}/${birthday.getFullYear()}`
+
+// const hora = new Date().getHours();
+
+// document.querySelector(".rodape h5").textContent = nome
+
+// document.querySelector(".rodape h6").textContent = `
+// Feito com HTML, CSS e JavaScript - ${hora}h`
+
+const idade = 18
+const ingresso =  false
+const documento = false
+
+if (idade >= 18) {
+    console.log("Maior de idade")
+} else {
+    console.log("Menor de idade")
+}
+
+if (idade >= 18 && ingresso === true) {
+    console.log("Pode entrar")
+} else if (documento === true) {
+    console.log("Pode entrar")
+} else {
+    console.log("Não pode entrar")
+}
+
+let saudacao = ""
+const hora = new Date().getHours()
+const nome = "Thiago Felix"
+
+if (hora < 12) {
+    saudacao = "Bom dia"
+} else if (hora < 18) {
+    saudacao = "Boa tarde"
+} else {
+    saudacao = "Boa noite"
+}
+
+document.querySelector(".hero h1").textContent = `${saudacao}! Eu sou ${nome}`
